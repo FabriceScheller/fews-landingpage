@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>fews – Weiter nutzen</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --white: #FFFFFF;
-    --black: #000000;
-    --blue: #0032FE;
-    --grey: #E3E3E3;
-    --text-muted: #717171;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
+ }
+ 
   body {
     font-family: 'DM Sans', sans-serif;
     background: var(--white);
@@ -32,49 +12,50 @@
     padding: 24px;
     -webkit-font-smoothing: antialiased;
   }
-
+ 
   .container {
     max-width: 420px;
     width: 100%;
     animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
-
+ 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   .logo {
     font-size: 64px;
     font-weight: 700;
     letter-spacing: -1.5px;
     margin-bottom: 40px;
   }
-
+ 
   .logo .dot { color: var(--blue); }
-
+ 
   h1 {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: -0.8px;
     margin-bottom: 16px;
+    white-space: nowrap;
   }
-
+ 
   .subtitle {
     font-size: 16px;
     line-height: 1.65;
     color: var(--text-muted);
     margin-bottom: 48px;
   }
-
+ 
   .price-block {
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--grey);
     padding: 32px 0;
     margin-bottom: 32px;
   }
-
+ 
   .price-label {
     font-size: 12px;
     font-weight: 600;
@@ -83,13 +64,13 @@
     color: var(--text-muted);
     margin-bottom: 16px;
   }
-
+ 
   .price-row {
     display: flex;
     align-items: baseline;
     gap: 6px;
   }
-
+ 
   .price-currency {
     font-size: 18px;
     font-weight: 500;
@@ -97,27 +78,34 @@
     align-self: flex-start;
     margin-top: 10px;
   }
-
+ 
   .price-amount {
     font-size: 64px;
     font-weight: 700;
     letter-spacing: -3px;
     line-height: 1;
   }
-
+ 
   .price-period {
     font-size: 16px;
     color: var(--text-muted);
     font-weight: 400;
     margin-left: 2px;
   }
-
+ 
   .price-note {
     font-size: 14px;
     color: var(--text-muted);
+  }
+ 
+  .price-note-above {
+    margin-bottom: 12px;
+  }
+ 
+  .price-note-below {
     margin-top: 12px;
   }
-
+ 
   .cta-button {
     display: block;
     width: 100%;
@@ -134,15 +122,15 @@
     text-align: center;
     letter-spacing: -0.2px;
   }
-
+ 
   .cta-button:hover {
     background: var(--blue);
     transform: translateY(-1px);
     box-shadow: 0 8px 24px rgba(0, 50, 254, 0.2);
   }
-
+ 
   .cta-button:active { transform: translateY(0); }
-
+ 
   .footer-note {
     text-align: center;
     font-size: 13px;
@@ -153,27 +141,28 @@
 </style>
 </head>
 <body>
-
+ 
 <div class="container">
   <div class="logo">fews<span class="dot">.</span></div>
-
-  <h1>Vollversion<br>sichern.</h1>
-  <p class="subtitle">Die Beta-Phase ist abgeschlossen. Sichere dir jetzt deinen Zugang zur Vollversion von fews – startend ab dem Juni 2026.</p>
-
-<div class="price-block">
-  <div class="price-row">
-    <span class="price-currency">CHF</span>
-    <span class="price-amount">0.90</span>
-    <span class="price-period">/ Monat</span>
+ 
+  <h1>Vollversion sichern.</h1>
+  <p class="subtitle">Die Beta-Phase ist abgeschlossen. Sichere dir jetzt deinen Zugang zur Vollversion von Fews – startend ab dem Juni 2026.</p>
+ 
+  <div class="price-block">
+    <div class="price-note price-note-above">Verrechnet ab dem 30. Juni 2026.</div>
+    <div class="price-row">
+      <span class="price-currency">CHF</span>
+      <span class="price-amount">0.90</span>
+      <span class="price-period">/ Monat</span>
+    </div>
+    <div class="price-note price-note-below">Jederzeit kündbar.</div>
   </div>
-  <div class="price-note">Verrechnet ab dem 30. Juni 2026.</div>
-  <div class="price-note">Jederzeit kündbar.</div>
-</div>
-
+ 
   <div data-fillout-id="cpGhkJKZVEus" data-fillout-embed-type="popup" data-fillout-button-text="Jetzt kostenpflichtig bestellen" data-fillout-dynamic-resize data-fillout-inherit-parameters data-fillout-popup-size="medium"></div>
   <script src="https://server.fillout.com/embed/v1/"></script>
-
+ 
 </div>
-
+ 
 </body>
 </html>
+ 
